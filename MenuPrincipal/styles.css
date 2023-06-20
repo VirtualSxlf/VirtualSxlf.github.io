@@ -1,0 +1,259 @@
+/*======================================================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+/* Importa una fuente de Google Fonts llamada Nunito. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+/* Establece un estilo predeterminado para todos los elementos del documento */
+
+body {
+    background-size: cover;
+    /* Establece el tamaño de la imagen de fondo para que cubra todo el elemento */
+    background-repeat: no-repeat;
+    /* Evita que la imagen de fondo se repita */
+    background-position: center;
+    /* Alinea la imagen de fondo en el centro del body */
+    height: 100vh;
+    /* Establece la altura del body */
+    opacity: 1; /* Establecer la opacidad inicial */
+    transition: opacity 0.5s ease; /* Establece la transición de opacidad */
+}
+
+/**/
+.header{
+    background-color: #19171C;
+    /* Establece el color de fondo del elemento .header */
+    display: flex;
+    /* Permite un posicionamiento flexible */
+    justify-content: space-between;
+    /* Alinea los elementos secundarios dentro del .header */
+    align-items: center;
+    /* Alinea verticalmente los elementos secundarios dentro del .header al centro */
+    height: 85px;
+    /* Establece la altura del .header en 85 píxeles. */
+    padding: 5px 10%;
+    /* Establece un relleno de 5 píxeles en la parte superior e inferior y un relleno del 10% del ancho disponible en los lados izquierdo y derecho */
+}
+
+
+.header .logo img {
+    height: 100px; 
+    /* Establece la altura de la imagen del logotipo en 70 píxeles */
+     margin-top: 40px;
+    /* Agrega un margen superior de 40 píxeles para mover la imagen hacia abajo */
+    width: auto; 
+    /* Ajusta automáticamente el ancho de la imagen del logotipo proporcionalmente a su altura */
+}
+
+.header .nav-links {
+    list-style: none; 
+    /* Elimina los estilos de viñetas de la lista de enlaces de navegación */
+}
+
+.header .nav-links li {
+    font-weight: bold; 
+    /* Establece el grosor de la fuente en negrita */
+    display: inline-block; 
+    /* Hace que los elementos de la lista de enlaces de navegación se muestren en línea */
+    padding: 0 20px; 
+    /* Agrega un relleno de 0 píxeles en la parte superior e inferior y 20 píxeles en los lados izquierdo y derecho de cada elemento de la lista */
+    transition: all 0.3s ease 0s; 
+    /* Aplica una transición suave de 0.3 segundos a todas las propiedades cuando se producen cambios en los elementos de la lista de enlaces de navegación */
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1); 
+    /* Aplica una escala del 110% al elemento de la lista cuando se pasa el cursor sobre él, lo que da un efecto de aumento de tamaño */
+}
+
+.header .nav-links a {
+    font-size: 700; 
+    /* Establece el tamaño de fuente en 700 */
+    color: #eceff1; 
+    /* Establece el color del texto de los enlaces de navegación en #eceff1 */
+    text-decoration: none; 
+    /* Elimina la decoración de subrayado de los enlaces de navegación */
+}
+
+.header .nav-links li a:hover {
+    transform: scale(1.1); 
+    /* Aplica una escala del 110% al botón cuando se pasa el cursor sobre él, lo que da un efecto de aumento de tamaño */
+    color: #813eff; 
+    /* Cambia el color del texto del enlace de navegación cuando se pasa el cursor sobre él a #813eff */
+}
+
+.header .btn button {
+    font-weight: 700; 
+    /* Establece el grosor de la fuente en 700 */
+    color: #1b3039; 
+    /* Establece el color del texto del botón en #1b3039 */
+    padding: 9px 25px; 
+    /* Agrega un relleno de 9 píxeles en la parte superior e inferior y 25 píxeles en los lados izquierdo y derecho del botón */
+    background: #eceff1;
+     /* Establece el color de fondo del botón en #eceff1 */
+    border: none; 
+    /* Elimina los bordes del botón */
+    border-radius: 50px; 
+    /* Establece un radio de borde de 50 píxeles para dar al botón una forma redondeada */
+    cursor: pointer; 
+    /* Cambia el cursor cuando se pasa sobre el botón a un puntero */
+    transition: all 0.3s ease 0s; 
+    /* Aplica una transición suave de 0.3 segundos a todas las propiedades cuando se producen cambios en el botón */
+}
+
+.header .btn button:hover {
+    background-color: #813eff; 
+    /* Cambia el color de fondo del botón cuando se pasa el cursor sobre él a #813eff */
+    color: #ffffff; 
+    /* Cambia el color del texto del botón cuando se pasa el cursor sobre él a #ffffff */
+    transform: scale(1.1); 
+    /* Aplica una escala del 110% al botón cuando se pasa el cursor sobre él, lo que da un efecto de aumento de tamaño */
+}
+
+
+/*======================================================================================*/
+
+.center-button {
+    position: fixed;
+    top: 45%; 
+    /* Establece la posición superior del botón al 45% */
+    left: 50%; 
+    /* Establece la posición izquierda del botón al 50% */
+    transform: translate(-50%, -50%); 
+    /* Centra el botón horizontal y verticalmente */
+    display: flex; 
+    /* Hace que los elementos internos se muestren en línea */
+    align-items: center; 
+    /* Alinea los elementos internos verticalmente */
+    padding: 15px 30px; 
+    /* Agrega un relleno de 15 píxeles en la parte superior e inferior y 30 píxeles en los lados izquierdo y derecho del botón */
+    font-size: 24px; 
+    /* Establece el tamaño de fuente en 24 píxeles */
+    font-weight: bold; 
+    /* Establece el grosor de la fuente en negrita */
+    color: #ffffff; 
+    /* Establece el color del texto del botón en #ffffff */
+    background-color: #19171C; 
+    /* Establece el color de fondo del botón en #19171C */
+    border: none; 
+    /* Elimina los bordes del botón */
+    border-radius: 30px; 
+    /* Establece un radio de borde de 30 píxeles para dar al botón una forma redondeada */
+    cursor: pointer; 
+    /* Cambia el cursor cuando se pasa sobre el botón a un puntero */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); 
+    /* Agrega una sombra al botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    /* Aplica una transición suave de 0.3 segundos a los cambios de color de fondo y transformación del botón */
+    text-decoration: none; 
+    /* Elimina la decoración de subrayado del botón */
+}
+
+.center-button span {
+    margin-right: 10px; 
+    /* Agrega un margen derecho de 10 píxeles al elemento <span> dentro del botón */
+}
+
+.center-button::after {
+    content: " "; 
+    /* Se coloca la imagen "rigby.png" hacia la derecha */
+    background-image: url("../img/rigby.png"); 
+    /* Establece la imagen de fondo utilizando la ruta "../img/rigby.png" */
+    background-size: contain; 
+    /* Ajusta el tamaño de la imagen para que quepa completamente dentro del elemento */
+    width: 40px; 
+    /* Establece el ancho del elemento en 24 píxeles */
+    height: 40px;
+     /* Establece la altura del elemento en 24 píxeles */
+}
+
+
+.center-button:hover {
+    background-color: #813eff; 
+    /* Cambia el color de fondo del botón cuando se pasa el cursor sobre él a #813eff */
+    transform: translate(-50%, -50%) scale(1.2); 
+    /* Aplica una escala de 1.2 al botón cuando se pasa el cursor sobre él, lo que da un efecto de aumento de tamaño */
+}
+
+.center-button:active {
+    background-color: #01b4ff; 
+    /* Cambia el color de fondo del botón cuando se activa a #01b4ff */
+    transform: translate(-50%, -50%) scale(0.95); 
+    /* Aplica una escala del 95% al botón cuando se activa, lo que da un efecto de reducción de tamaño */
+}
+
+.below-button {
+    position: fixed;
+    top: 60%;
+    /* Establece la posición superior del botón al 60% */
+    left: 50%;
+    /* Establece la posición izquierda del botón al 50% */
+    transform: translate(-50%, -50%);
+    /* Centra el botón horizontal y verticalmente */
+    display: flex; 
+    /* Hace que los elementos internos se muestren en línea */
+    align-items: center; 
+    /* Alinea los elementos internos verticalmente */
+    padding: 15px 30px;
+    /* Agrega un relleno de 15 píxeles en la parte superior e inferior y 30 píxeles en los lados izquierdo y derecho del botón */
+    font-size: 24px;
+    /* Establece el tamaño de fuente en 24 píxeles */
+    font-weight: bold; 
+    /* Establece el grosor de la fuente en negrita */
+    color: #ffffff; 
+    /* Establece el color del texto del botón en #ffffff */
+    background-color: #19171C; 
+    /* Establece el color de fondo del botón en #19171C */
+    border: none; 
+    /* Elimina los bordes del botón */
+    border-radius: 30px; 
+    /* Establece un radio de borde de 30 píxeles para dar al botón una forma redondeada */
+    cursor: pointer; 
+    /* Cambia el cursor cuando se pasa sobre el botón a un puntero */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); 
+    /* Agrega una sombra al botón */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Aplica una transición suave de 0.3 segundos a los cambios de color de fondo y transformación del botón */
+    text-decoration: none;
+    /* Elimina la decoración de subrayado del botón */
+}
+
+.below-button span {
+    margin-right: 10px;
+    /* Agrega un margen derecho de 10 píxeles al elemento <span> dentro del botón */
+}
+  
+.below-button::after {
+    content: " "; 
+    /* Se coloca la imagen "bombon.jpg" hacia la derecha */
+    background-image: url("../img/bombon.jpg"); 
+    /* Establece la imagen de fondo utilizando la ruta "../img/rigby.png" */
+    background-size: contain; 
+    /* Ajusta el tamaño de la imagen para que quepa completamente dentro del elemento */
+    width: 40px; 
+    /* Establece el ancho del elemento en 24 píxeles */
+    height: 40px;
+     /* Establece la altura del elemento en 24 píxeles */
+}
+
+.below-button:hover {
+    background-color: #813eff;
+    /* Cambia el color de fondo del botón cuando se pasa el cursor sobre él a #813eff */
+    transform: translate(-50%, -50%) scale(1.2);
+    /* Aplica una escala de 1.2 al botón cuando se pasa el cursor sobre él, lo que da un efecto de aumento de tamaño */
+}
+
+.below-button:active {
+    background-color: #fb01ff;
+    /* Cambia el color de fondo del botón cuando se activa a #fb01ff */
+    transform: translate(-50%, -50%) scale(0.95);
+    /* Aplica una escala de 0.95 al botón cuando se activa, lo que da un efecto de reducción de tamaño */
+}
+
+/*======================================================================================*/
